@@ -11,6 +11,7 @@
     <modules>
         <module>executor</module>
         <module>batch</module>
+        <module>protobuf</module>
     </modules>
 
 

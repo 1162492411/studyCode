@@ -1,0 +1,16 @@
+//指定版本
+syntax = "proto3";
+//定义包名
+package com.study.protobuf.model;
+option java_package = "com.study.protobuf.model";
+option java_outer_classname = "UserBuild";
+
+//定义结构数据
+message User {
+    //必选字段 第1个属性
+    string name = 1;
+    //必选字段 第2个属性
+    int32 age = 2;
+    //可选字段 第3个属性
+    string comment = 3;
+}

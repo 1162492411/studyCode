@@ -1,0 +1,36 @@
+//指定版本
+syntax = "proto3";
+//定义包名
+package com.study.protobuf.model;
+option java_package = "com.study.protobuf.model";
+option java_outer_classname = "ProductSeriesGroupResBuild";
+
+//定义结构数据
+message ProductSeriesGroupRes {
+  //第1个属性
+  string seriesName = 1;
+  //第2个属性
+  string seriesCode = 2;
+  //第3个属性
+  repeated ProductSeriesRes productSeriesList = 3;
+}
+
+//定义结构数据
+message ProductSeriesRes {
+  //第1个属性
+  sint32 id = 1;
+  //第2个属性
+  string name = 2;
+  //第3个属性
+  repeated ProductTagVo productTags = 3;
+}
+
+//定义结构数据
+message ProductTagVo {
+  //第1个属性
+  string tagName = 1;
+  //第2个属性
+  string tagCode = 2;
+  //第3个属性
+  string iconUrl = 3;
+}
