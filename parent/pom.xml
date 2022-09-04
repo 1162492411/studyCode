@@ -12,6 +12,7 @@
         <module>executor</module>
         <module>batch</module>
         <module>protobuf</module>
+        <module>mapstruct</module>
     </modules>
 
 
