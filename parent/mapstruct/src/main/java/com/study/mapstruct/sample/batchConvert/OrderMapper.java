@@ -1,9 +1,11 @@
-package com.study.mapstruct.sample.a;
+package com.study.mapstruct.sample.batchConvert;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 import org.mapstruct.factory.Mappers;
+
+import java.util.List;
 
 @Mapper
 public interface OrderMapper {
@@ -13,5 +15,7 @@ public interface OrderMapper {
             @Mapping(source = "no", target = "orderNo")
     })
     OrderRes dbToRes(Order order);
+
+    List<OrderRes> dbListToResList(List<Order> orders);
 
 }

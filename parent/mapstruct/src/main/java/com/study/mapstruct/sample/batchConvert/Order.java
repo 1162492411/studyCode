@@ -1,4 +1,4 @@
-package com.study.mapstruct.sample.a;
+package com.study.mapstruct.sample.batchConvert;
 
 import lombok.Data;
 
@@ -8,5 +8,4 @@ import java.util.Date;
 public class Order{
     private Long id;
     private Long no;
-    private Date createDate;
 }

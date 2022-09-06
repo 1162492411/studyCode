@@ -1,4 +1,4 @@
-package com.study.mapstruct.sample.b;
+package com.study.mapstruct.sample.multiSourceToOneDest;
 
 import lombok.Data;
 

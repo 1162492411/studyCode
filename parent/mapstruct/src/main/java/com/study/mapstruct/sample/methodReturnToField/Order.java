@@ -1,4 +1,4 @@
-package com.study.mapstruct.sample.b;
+package com.study.mapstruct.sample.methodReturnToField;
 
 import lombok.Data;
 
@@ -8,6 +8,4 @@ import java.util.Date;
 public class Order{
     private Long id;
     private Long no;
-    private Date createDate;
-    private Long recyclerId;
 }

@@ -1,4 +1,4 @@
-package com.study.mapstruct.sample.b;
+package com.study.mapstruct.sample.multiSourceToOneDest;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -17,5 +17,5 @@ public interface OrderMapper {
             @Mapping(source = "mer.id", target = "recyclerId"),
             @Mapping(source = "mer.name", target = "recyclerName")
     })
-    OrderRes dbToRes(Order order,Merchant mer);
+    OrderRes dbToRes(Order order, Merchant mer);
 }

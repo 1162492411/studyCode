@@ -1,6 +1,5 @@
-package com.study.mapstruct.sample.b;
+package com.study.mapstruct.sample.multiSourceToOneDest;
 
-import com.alibaba.fastjson.JSON;
 import org.junit.Assert;
 import org.junit.Test;
 
