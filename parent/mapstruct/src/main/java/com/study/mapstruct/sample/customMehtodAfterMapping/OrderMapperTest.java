@@ -1,5 +1,6 @@
-package com.study.mapstruct.sample.collectionFieldToCollectionField;
+package com.study.mapstruct.sample.customMehtodAfterMapping;
 
+import com.alibaba.fastjson.JSON;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -19,8 +20,8 @@ public class OrderMapperTest {
         //转换
         OrderRes orderRes = orderMapper.dbToRes(order);
         //判断出参
+        System.out.println(JSON.toJSONString(orderRes));
         Assert.assertEquals(order.getId(),orderRes.getId());
         Assert.assertEquals(order.getNo(),orderRes.getOrderNo());
-
     }
 }
